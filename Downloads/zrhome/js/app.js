@@ -13,12 +13,16 @@ $(document).ready(function () {
 	
 	$('.work-item img').click(function(e) {
 	  e.stopPropagation();
-	
+
 	  $('.work-preview').fadeIn(300);
+    document.body.style.overflow = 'hidden';
 	  $('.preview-img').attr('src', e.target.dataset.src);
 	});
-	
-	$('body').click(function() {
-	  $('.work-preview').fadeOut(300);
-	});
+
+  $('body').on('click touchstart', hidePreview);
+
+  function hidePreview() {
+    $('.work-preview').fadeOut(300);
+    document.body.style.overflow = 'auto';
+  }
 });

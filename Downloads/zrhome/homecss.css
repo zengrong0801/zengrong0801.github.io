@@ -366,13 +366,16 @@ body .big-clouds .near-clouds {
   width: 100%;
   position: fixed;
   left: 0;
-  top: 50%;
-/*  cursor: pointer;*/
+  top: 0;
 }
 .preview-img {
-	  display: block;
-	  height: 400px;
-	  margin: -200px auto 0;
+  display: block;
+  width: 80%;
+  margin: 150px auto;
+  padding: 20px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  background-color: #FFF;
 }
 .w50{
 	width:30%;
