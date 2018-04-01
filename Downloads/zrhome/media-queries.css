@@ -1,0 +1,51 @@
+@media screen and (max-width: 970px) {
+	#horizontal-ad
+	{
+		display:none;
+	}
+	#vertical-ad
+	{
+		display:block;
+	}
+
+	div article  {
+		background: none;
+	}
+
+	.liskill .liskill-text {
+	  width: 100%;
+	  margin-bottom: 10px;
+	  font-size: 16px;
+	}
+	.liskill .progress {
+		width: 100%;
+	}
+
+	div#wrap {
+		width:100%;
+	}
+	a#logo {
+	    margin: 0 auto;
+	}
+	div#sidebar {
+		position: static;
+		width:100%;
+		height: auto;
+		float: none;
+	}
+	#sidebar #navigation {
+	    width: 100%;
+		text-align: center;
+	}
+	
+	div#container {
+	    width: 100%;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.objspan .jobs, .objspan .full-time {
+	  width: 100%;
+	}
+}

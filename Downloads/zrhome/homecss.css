@@ -1,0 +1,397 @@
+body, p, div, h1, h2, h3, h4, h5, h6, table, tbody, tr, td, span, blockquote, a, abbr, address, cite, code, img, ul, ol, li, dl, dd, dt, form, label, fieldset, caption, input, textarea, button {
+	border:0;
+	outline:0;
+	font-family: Microsoft YaHei , Arial,simsun, Sans-Serif ;
+	font-size: 1.8rem;
+	vertical-align:baseline;
+	list-style:none;
+	text-decoration:none;
+	line-height:2.0rem;
+	margin:0;
+	padding:0;
+}
+html{ font-size:62.5%; }
+body{background:#ff8a87}
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+.clear{clear:both}
+.fl{ float: left}
+.fr{ float: right}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+div#wrap {
+	width:980px;
+	position:relative;
+	margin:0 auto!important;
+	height: 2000px; z-index: 100;
+}
+div#sidebar {
+	width:220px;
+	height:100%;
+	float:left;
+	background:#2c2c2c;
+	border-right:1px solid #2e2f2f;
+	position:fixed;
+	
+}
+a#logo {
+	text-align:center;
+	display:block;
+	border-bottom:1px solid #353535;
+	width:100%;
+	position:relative;
+	z-index:999;
+	margin:10px auto;
+	padding: 20px 0 20px 0;
+	
+}
+a#logo img{
+  border-radius:50%;
+}
+#navigation {
+	position:relative;
+	width:220px;
+	z-index:999
+}
+#navigation li {
+	border:none;
+	background:none;
+	margin:0;
+	padding:0;	
+}
+#navigation li a{color: #FFFFFF;
+}
+#navigation li span {
+	  color: #949494;font-size: 1.4rem;
+}
+
+#navigation li a:link, #navigation li a:visited {
+	text-decoration:none;
+	width:auto; 
+    font-family:"Microsoft YaHei", Arial;
+	font-size: 1.6rem; 
+    padding-left:30px !important;
+	display:block;
+	transition:all 200ms;
+	-webkit-transition:all 200ms;
+	-moz-transition:all 200ms;
+	-o-transition:all 200ms;
+	padding:10px 0px ;	
+}
+#navigation li a:hover, #navigation li a.active {
+	background:#1b1b1b;
+	color:#FFF; 	
+}
+div#container {
+	width:700px;
+	float:right;
+	padding: 0 30px;
+	position:relative;
+	background:#fffde8;    
+}
+div.page {
+    padding-top: 20px;
+}
+
+.abouttitle, .skilltitle, .Objtitle ,.ep,.ex,.ct{
+    height:42px;
+	  background: url(images/bjimg.png) no-repeat;
+	  margin-bottom: 20px; 
+	  color: #FFFFFF
+}
+.abouttitle h4, .skilltitle h4, .Objtitle h4 ,.ep h4,.ex h4 ,.ct h4{
+	  line-height: 32px;
+	  font-size: 2.2rem;
+	  padding-left: 10px;
+	  font-family: 'OstrichSansBlack';
+	  text-shadow:1px 1px 0px #cb7673;
+	  text-transform: uppercase;
+	  font-weight:bold;
+}
+.page_conent{
+   width: 100%;
+   margin: 30px auto;
+   display: block;
+   -webkit-box-shadow: 0 0 10px 3px #c9c9c7;
+   -moz-box-shadow:0 0 10px 3px #c9c9c7;
+   box-shadow: 0 0 10px 3px  #c9c9c7;
+}
+div.introduce {
+	margin:0 auto;
+	padding-top: 30px
+	;font-size: 1.4rem; 
+}
+div article  { 
+	color: #2e2f2f ;
+	text-indent:2.0rem;
+	padding:40px ;
+	line-height: 26px; 
+	background: url(images/bjimg.png) no-repeat;
+	background-position: 0px -114px;
+}
+div .namecs .namefl{ 
+	background-image: url(images/bjimg.png);
+	background-position: 0px -58px;
+	width: 207px;
+	height: 60px;
+}
+div .namecs .namefr{
+	border-bottom :1px dashed  #2e2f2f ; 
+	width:450px;
+	height: 30px;
+}
+.warper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+/****CSS3 radius实现圆形动画特效****/
+.caseBlanche {
+    height:160px;
+    width:160px;
+	position: relative;
+	float: left;
+}
+.caseBlanche .load {
+  color:#fff;
+  font-family:calibri;               
+  text-align:center;
+  position:absolute;
+  top :12px;
+  left :26px;
+  height:120px;
+  width:120px;
+  border-radius:60px;
+}
+.caseBlanche .test {
+  height:10px;
+  width:10px;
+  position:absolute;
+  border-radius:50%;
+  top:0;
+  left:20px;
+  margin:5px;
+}
+.caseBlanche .rond {
+  height:140px;
+  width:140px;
+  border-radius:50%;
+  position:absolute;
+  top:0;
+  left:15px;
+  animation:rond 3s infinite;
+  -webkit-animation:rond 3s infinite;
+}
+.caseBlanche .load p {
+  padding-top: 10px;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+/****CSS3 第一圈****/
+.caseBlanche1 .load {
+  background-color:#dc3545
+}
+.caseBlanche1 .test {
+  background-color:#dc3545;
+}
+.caseBlanche1 .rond {
+  border:1px solid #dc3545; 
+}
+
+@keyframes rond {
+  0% {transform : rotate(0deg);}
+  100% {transform : rotate(360deg);}
+}
+
+@-webkit-keyframes rond {
+  0%{-webkit-transform : rotate(0deg);}
+  100%{-webkit-transform : rotate(360deg);}
+}
+
+/****CSS3 第二圈****/
+
+.caseBlanche2 .load {
+  background-color:#FF5700
+  
+}
+                                                                            
+.caseBlanche2 .test{
+  background-color:#FF5700;
+}
+
+.caseBlanche2 .rond {
+  border:1px solid #FF5700;
+}
+
+/****CSS3 第三圈****/
+.caseBlanche3 .load {
+  background-color:#17a2b8
+}
+                                                                            
+.caseBlanche3 .test{
+  background-color:#17a2b8;
+}
+
+.caseBlanche3 .rond {
+  border:1px solid #17a2b8;
+}
+
+/****CSS3 第四圈****/
+
+.caseBlanche4 .load {
+  background-color:#28a745;
+  
+}
+                                                                            
+.caseBlanche4 .test{
+  background-color:#28a745;
+}
+
+.caseBlanche4 .rond {
+  border:1px solid #28a745;
+}
+
+
+/****云朵特效CSS****/
+body .big-clouds{
+	z-index:0; 
+}
+body .big-clouds img {
+	max-width: 100%;
+	height: auto;
+}
+body .big-clouds .stage {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+}
+body .big-clouds .far-clouds {
+    background: transparent url(images/far-clouds.png)305px 50px repeat-x;
+}
+body .big-clouds .near-clouds {
+    background: transparent url( images/near-clouds.png)305px 150px repeat-x;
+}
+/****云朵特效CSS****/
+.liskill{
+	width: 100%;
+}
+.liskill li{
+	width: 100%;
+	line-height:50px;
+	color:#6d6d6d;
+	margin-bottom: 20px;
+}
+.liskill .liskill-text {
+  display: inline-block;
+  width: 30%;
+}
+.liskill .progress {
+	width: 70%;
+	height: 20px;
+}
+
+.skillfr{ 
+   width: 400px;
+ }
+.bg-Orange{
+     background-color: #FF5700 !important;
+}
+.title h4 {
+  padding-left:45px; 
+  background: url(images/bjimg.png) no-repeat;
+  height: 35px;
+  line-height: 35px;
+}
+.objspan .spandiv {
+  margin-top: 20px;
+}
+.objspan span{
+  color: #6d6d6d;
+	font-size: 1.6rem;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.objspan .jobs, .objspan .full-time {
+  width: 50%;
+}
+.objspan h4{
+		background-position: 0px -340px;
+}
+.epspan h4{
+		background-position: 0px -375px;
+}
+.exspan h4{
+		background-position: 0px -410px;
+}
+.zp h4{
+		background-position: 0px -410px;
+}
+.ctdiv h4{
+		background-position: 0px -410px;
+}
+.zp .work-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.zp .work-item {
+  width: 180px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.zp .work-item img {
+  width: 180px;
+  display: block;
+  background-color: #FFF;
+  border-radius: 3px;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px 3px #c9c9c7;  
+  -moz-box-shadow:0 0 10px 3px #c9c9c7;  
+  box-shadow: 0 0 10px 3px  #c9c9c7; 
+  
+}
+.work-preview {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 50%;
+/*  cursor: pointer;*/
+}
+.preview-img {
+	  display: block;
+	  height: 400px;
+	  margin: -200px auto 0;
+}
+.w50{
+	width:30%;
+}
+.epspan{ 
+	margin-top: 20px;
+}
+.epspan .pdiv,.exspan .pdiv,.ctdiv { 
+	margin: 10px;
+}
+.epspan .pdiv p, .exspan .pdiv p,.ctdiv p{ 
+	color: #6d6d6d;
+	font-size: 1.5rem;
+	line-height: 30px; 
+}
+footer{  
+	margin:50px 0px; 
+	text-align: center; 
+	display: block;
+	color: #ccc;
+	font-size: 1.4rem;
+}
