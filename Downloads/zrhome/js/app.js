@@ -11,16 +11,17 @@ $(document).ready(function () {
         dir: "left"
     });
 	
-	$('.work-item img').click(function(e) {
-	  e.stopPropagation();
-
-	  $('.work-preview').fadeIn(300);
-    document.body.style.overflow = 'hidden';
-	  $('.preview-img').attr('src', e.target.dataset.src);
-	});
+	$('.work-item img').on('click touchstart', showPreview);
 
   $('body').on('click touchstart', hidePreview);
 
+  function showPreview(e) {
+    e.stopPropagation();
+
+    $('.work-preview').fadeIn(300);
+    document.body.style.overflow = 'hidden';
+    $('.preview-img').attr('src', e.target.dataset.src);
+  }
   function hidePreview() {
     $('.work-preview').fadeOut(300);
     document.body.style.overflow = 'auto';
