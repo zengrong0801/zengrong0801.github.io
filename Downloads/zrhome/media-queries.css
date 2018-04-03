@@ -10,6 +10,8 @@
 
 	div article  {
 		background: none;
+		padding: 0px 10px 20px 10px;
+		
 	}
 
 	.liskill .liskill-text {
@@ -48,4 +50,12 @@
 	.objspan .jobs, .objspan .full-time {
 	  width: 100%;
 	}
+	
+	.preview-img {
+  width: 100%;
+ 
+}
+	
+	
+	
 }

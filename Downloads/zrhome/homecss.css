@@ -11,7 +11,7 @@ body, p, div, h1, h2, h3, h4, h5, h6, table, tbody, tr, td, span, blockquote, a,
 	padding:0;
 }
 html{ font-size:62.5%; }
-body{background:#ff8a87}
+body{background:#ff8a87;}
 *, ::after, ::before {
     box-sizing: content-box;
 }
@@ -28,7 +28,7 @@ div#wrap {
 	width:980px;
 	position:relative;
 	margin:0 auto!important;
-	height: 2000px; z-index: 100;
+/*	height: 2000px; z-index: 100;*/
 }
 div#sidebar {
 	width:220px;
@@ -106,7 +106,7 @@ div.page {
 }
 .abouttitle h4, .skilltitle h4, .Objtitle h4 ,.ep h4,.ex h4 ,.ct h4{
 	  line-height: 32px;
-	  font-size: 2.2rem;
+	  font-size: 1.8rem;
 	  padding-left: 10px;
 	  font-family: 'OstrichSansBlack';
 	  text-shadow:1px 1px 0px #cb7673;
@@ -121,26 +121,27 @@ div.page {
    -moz-box-shadow:0 0 10px 3px #c9c9c7;
    box-shadow: 0 0 10px 3px  #c9c9c7;
 }
-div.introduce {
+.introduce {
 	margin:0 auto;
 	padding-top: 30px
 	;font-size: 1.4rem; 
 }
-div article  { 
+ article  { 
 	color: #2e2f2f ;
 	text-indent:2.0rem;
-	padding:40px ;
+	padding:10px 40px;
 	line-height: 26px; 
-	background: url(images/bjimg.png) no-repeat;
+/*	background: url(images/bjimg.png) no-repeat;*/
 	background-position: 0px -114px;
+	text-align: justify;
 }
-div .namecs .namefl{ 
+ .namecs .namefl{ 
 	background-image: url(images/bjimg.png);
 	background-position: 0px -58px;
 	width: 207px;
 	height: 60px;
 }
-div .namecs .namefr{
+ .namecs .namefr{
 	border-bottom :1px dashed  #2e2f2f ; 
 	width:450px;
 	height: 30px;
@@ -150,6 +151,7 @@ div .namecs .namefr{
   justify-content: space-around;
   flex-wrap: wrap;
   overflow: hidden;
+  margin-top: 20px;
 }
 /****CSS3 radius实现圆形动画特效****/
 .caseBlanche {
@@ -166,6 +168,7 @@ div .namecs .namefr{
   top :12px;
   left :26px;
   height:120px;
+  
   width:120px;
   border-radius:60px;
 }
@@ -189,7 +192,7 @@ div .namecs .namefr{
   -webkit-animation:rond 3s infinite;
 }
 .caseBlanche .load p {
-  padding-top: 10px;
+  padding-top: 15px;
   font-size: 1.8rem;
   margin-top: 20px;
 }
@@ -325,19 +328,21 @@ body .big-clouds .near-clouds {
   width: 50%;
 }
 .objspan h4{
-		background-position: 0px -340px;
+		background-position: 0px -63px;
 }
 .epspan h4{
-		background-position: 0px -375px;
-}
-.exspan h4{
-		background-position: 0px -410px;
+		background-position: 0px -98px;
+		
 }
 .zp h4{
-		background-position: 0px -410px;
+		background-position: 0px -132px;
 }
+.exspan h4{
+		background-position: 0px -166px;
+}
+
 .ctdiv h4{
-		background-position: 0px -410px;
+		background-position: 0px -201px;
 }
 .zp .work-list {
   margin-top: 20px;
@@ -363,15 +368,13 @@ body .big-clouds .near-clouds {
   
 }
 .work-preview {
-  width: 100%;
   position: fixed;
-  left: 0;
-  top: 0;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 .preview-img {
-  display: block;
   width: 80%;
-  margin: 150px auto;
   padding: 20px;
   border: 1px solid #CCC;
   border-radius: 5px;

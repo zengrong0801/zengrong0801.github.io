@@ -19,11 +19,11 @@ $(document).ready(function () {
     e.stopPropagation();
 
     $('.work-preview').fadeIn(300);
-    document.body.style.overflow = 'hidden';
+//    document.body.style.overflow = 'auto';
     $('.preview-img').attr('src', e.target.dataset.src);
   }
   function hidePreview() {
     $('.work-preview').fadeOut(300);
-    document.body.style.overflow = 'auto';
+//    document.body.style.overflow = 'auto';
   }
 });
