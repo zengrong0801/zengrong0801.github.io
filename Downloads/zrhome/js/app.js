@@ -11,7 +11,7 @@ $(document).ready(function () {
         dir: "left"
     });
 	
-	$('.work-item img').on('click touchstart', showPreview);
+	$('.work-item img').on('click touchend', showPreview);
 
   $('body').on('click touchstart', hidePreview);
 
